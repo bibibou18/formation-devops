@@ -1,0 +1,11 @@
+# Nom du Workflow
+name: Mon workflow 
+# Condition pour lancer le workflow
+on: [push]
+# taches à effectuer 
+jobs:
+  #première tache
+  mon-premier-job:
+    run-on: ubuntu-latest
+    steps:
+      -run: echo "Mon premier job a été lancé"
